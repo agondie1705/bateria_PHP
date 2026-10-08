@@ -6,6 +6,16 @@
     <title>Document</title>
 </head>
 <body>
-    <button>lanzar dado</button>
+    <form method="POST"> 
+        <button type="submit" name="lanzar">lanzar dado</button> 
+    </form>
+    <?php
+        $resultado=NULL;
+
+        if(isset($_POST["lanzar"])){
+         $resultado=rand(1, 6);
+        }
+    ?>
+    echo "<h1>El resultado del dado es: $resultado</h1>";
 </body>
 </html>
