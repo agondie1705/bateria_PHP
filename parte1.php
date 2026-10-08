@@ -14,8 +14,10 @@
 
         if(isset($_POST["lanzar"])){
          $resultado=rand(1, 6);
+          echo"<h1>El resultado del dado es: $resultado</h1>";
         }
+        
     ?>
-    echo "<h1>El resultado del dado es: $resultado</h1>";
+   
 </body>
 </html>
