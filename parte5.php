@@ -3,11 +3,13 @@
         $valor1 = $_GET['valor1'];
         $valor2 = $_GET['valor2'];
         $operador = $_GET['operador'];
-
+        // AND: true si los DOS valores son true
         if ($operador == "and") {
             $resultado = $valor1 && $valor2;
+        // OR: true si AL MENOS UNO de los valores es true
         } elseif ($operador == "or") {
             $resultado = $valor1 || $valor2;
+        // XOR: true si SOLO UNO de los dos valores es true
         } elseif ($operador == "xor") {
             $resultado = $valor1 xor $valor2;
         } elseif ($operador == "+") {
