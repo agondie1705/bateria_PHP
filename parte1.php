@@ -1,3 +1,7 @@
+<?php
+    $resultados=$_GET["resultados"]??"";
+    $resultados=rand(1, 6);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +10,8 @@
     <title>Document</title>
 </head>
 <body>
-    <button>lanzar dado</button>
+    <h1>Los resultados anteriores: <?= $resultados ?></h1>
+
+    <br><button type="submit" name="lanzar"><a href="parte1.php?resultados=<?= $resultados ?>">lanzar dado</a></button> 
 </body>
 </html>
